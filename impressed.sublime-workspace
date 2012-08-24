@@ -1,0 +1,592 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Bea",
+				"BeautifulStoneSoup"
+			],
+			[
+				"start",
+				"startups"
+			],
+			[
+				"star",
+				"startup"
+			],
+			[
+				"bind",
+				"bindSelection"
+			],
+			[
+				"CodeMirror-",
+				"CodeMirror-scroll"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"cloudf",
+				"cloudfiles"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"clod",
+				"cloud_auth_info"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"cloud",
+				"cloudfiles"
+			],
+			[
+				"file_",
+				"file_loc"
+			],
+			[
+				"save",
+				"save_images"
+			],
+			[
+				"browser",
+				"browser_contents"
+			],
+			[
+				"veri",
+				"verify_url"
+			],
+			[
+				"verify",
+				"verify_dest"
+			],
+			[
+				"regex",
+				"regex_c"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"view",
+				"views_key"
+			],
+			[
+				"pass",
+				"passphrase"
+			],
+			[
+				"insr",
+				"insert_array"
+			],
+			[
+				"inser",
+				"insert_columns"
+			],
+			[
+				"insert",
+				"insert_columns"
+			],
+			[
+				"user",
+				"user_info"
+			],
+			[
+				"pr",
+				"property"
+			],
+			[
+				"localti",
+				"localtime"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/www/impressed/bartaz-impress.js-9ccb39d/README.md",
+		"/D/www/impressed/README.md",
+		"/D/www/gbid/flight/net/Request.php",
+		"/D/www/gbid/includes/classes/QueryBuilder/QueryBuilder.php",
+		"/D/www/gbid/includes/classes/Scoop/Scoop.php",
+		"/D/www/gbid/flight/net/Router.php",
+		"/D/www/gbid/includes/config.php",
+		"/D/www/gbid/index.php",
+		"/D/www/gbid/includes/bootstrap.php",
+		"/D/www/ttj/index.htm",
+		"/D/www/ttj/main.css",
+		"/D/www/Scoop/README.md",
+		"/D/www/Variabilis/Variabilis.php",
+		"/D/www/gbid/includes/classes/adodb5/adodb.inc.php",
+		"/D/www/gbid/includes/classes/adodb5/rsfilter.inc.php",
+		"/D/www/gbid/bootstrap.php",
+		"/D/www/gbid/flight/util/Collection.php",
+		"/D/www/gbid/flight/Flight.php",
+		"/C/cygwin/etc/nginx/nginx.conf",
+		"/D/www/custombid/Shield/Bootstrap.php",
+		"/D/www/custombid/Shield/Session.php",
+		"/D/www/custombid/config.php",
+		"/D/www/custombid/Shield/Log.php",
+		"/D/www/custombid/Shield/Base.php",
+		"/D/www/custombid/ham/ham.php",
+		"/D/www/custombid/index.php",
+		"/D/www/custombid/.travis.yml",
+		"/D/www/custombid/example/index.php",
+		"/D/www/custombid/app/config.php",
+		"/D/www/custombid/app/index.php",
+		"/D/www/shieldframework/README.md",
+		"/D/www/shieldframework/.git/COMMIT_EDITMSG",
+		"/D/www/bbauction/viewtopic.php",
+		"/D/www/bbauction/common.php",
+		"/D/www/custombid/README.md",
+		"/D/www/bbauction/config.php",
+		"/D/www/bbauction/auction_rating.php",
+		"/D/www/bbauction/memberlist.php",
+		"/D/www/bbauction/auction_sitemap.php",
+		"/D/www/bbauction/auction/auction_common.php",
+		"/D/www/bbauction/auction_ipn.php",
+		"/D/www/bbauction/templates/subSilver/subSilver.cfg",
+		"/D/www/bbauction/install.txt",
+		"/D/www/bbauction/templates/subSilver/profile_view_body.tpl",
+		"/D/www/bbauction/templates/subSilver/viewtopic_body.tpl",
+		"/D/www/bbauction/includes/usercp_viewprofile.php",
+		"/D/www/bbauction/includes/page_header.php",
+		"/D/www/bbauction/templates/subSilver/overall_header.tpl",
+		"/D/www/bbauction/language/lang_english/lang_main.php",
+		"/D/www/bbauction/language/lang_english/lang_admin.php",
+		"/D/www/bbauction/admin/index.php",
+		"/D/www/bbauction/viewonline.php",
+		"/D/www/bbauction/install_db.php",
+		"/D/www/govbid/active_auctions.php",
+		"/D/www/govbid/browse.php",
+		"/D/www/govbid/index.php",
+		"/D/www/govbid/footer.php",
+		"/D/www/govbid/header.php",
+		"/D/Games/Minecraft/lastest_snapshot.py",
+		"/D/Games/Minecraft/version",
+		"/D/www/govbid/includes/functions_template.php",
+		"/D/www/govbid/themes/default2/select_category.tpl",
+		"/D/www/govbid/includes/config.inc.php",
+		"/D/www/dev/styles/WBB3/template/overall_header.html",
+		"/G/Music/Awesome.m3u",
+		"/D/Projects/ultralike/manifest.json",
+		"/D/Projects/ultralike/ultralike.js",
+		"/D/www/bigdump/index.php",
+		"/D/www/dev/config.php",
+		"/C/Users/Bheesham/AppData/Local/Temp/55e954cf-8bda-4a9d-8772-bfd80cc7323e/home/bheesham/webapps/ccss/wp-config.php",
+		"/D/Projects/ultralike/jquery.js",
+		"/D/Projects/ultralike/ultralike.htm",
+		"/C/Users/Bheesham/AppData/Local/Temp/5e367bba-b298-489a-9c19-318ca08fe846/WebSite/pic_dev/application/views/issues_search_form.php",
+		"/C/Users/Bheesham/AppData/Local/Temp/5e367bba-b298-489a-9c19-318ca08fe846/WebSite/pic_dev/application/views/manage_add_article.php",
+		"/C/Users/Bheesham/AppData/Local/Temp/5e367bba-b298-489a-9c19-318ca08fe846/WebSite/pic_dev/application/views/manage_add_issue.php",
+		"/C/Users/Bheesham/AppData/Local/Temp/5e367bba-b298-489a-9c19-318ca08fe846/WebSite/pic_dev/application/models/Category.php",
+		"/C/Users/Bheesham/AppData/Local/Temp/5e367bba-b298-489a-9c19-318ca08fe846/WebSite/pic_dev/application/controllers/manage.php",
+		"/C/Users/Bheesham/AppData/Local/Temp/5e367bba-b298-489a-9c19-318ca08fe846/WebSite/pic_dev/application/views/manage_add.php",
+		"/C/Users/Bheesham/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Program Files (x86)/Steam/steamapps/common/blacklightretribution/Blacklight Retribution/Live/FoxGame/Config/PCConsole/Cooked/PCConsole-FoxGame.ini",
+		"/D/Program Files (x86)/Steam/steamapps/common/blacklightretribution/Blacklight Retribution/Live/FoxGame/Config/PCConsole/Cooked/FoxHud.ini",
+		"/D/Program Files (x86)/Steam/steamapps/common/blacklightretribution/Blacklight Retribution/Live/FoxGame/Config/PCConsole/Cooked/FoxCompat.ini",
+		"/D/Program Files (x86)/Steam/steamapps/common/blacklightretribution/Blacklight Retribution/Live/FoxGame/Config/PCConsole/Cooked/PCConsole-FoxEngine.ini",
+		"/D/Program Files (x86)/Steam/steamapps/common/blacklightretribution/Blacklight Retribution/Live/FoxGame/Config/PCConsole/Cooked/PCConsole-FoxInput.ini",
+		"/D/Program Files (x86)/Steam/steamapps/common/blacklightretribution/Blacklight Retribution/Live/Binaries/Win32/pb/pbclgame.cfg",
+		"/C/Users/Bheesham/AppData/Local/Temp/fz3temp-1/manage.php",
+		"/C/Users/Bheesham/AppData/Local/Temp/fz3temp-1/manage_add.php",
+		"/C/Users/Bheesham/AppData/Local/Temp/fz3temp-1/manage.js",
+		"/C/Users/Bheesham/AppData/Local/Temp/fz3temp-1/overall_footer.php",
+		"/C/Users/Bheesham/AppData/Local/Temp/fz3temp-1/phperrors.log",
+		"/D/Dropbox/Academia/Carleton University/CSSS/July 28/Agenda.md",
+		"/D/Dropbox/Academia/Carleton University/CSSS/July 28/Minutes.md",
+		"/D/Dropbox/Academia/Carleton University/CSSS/July 28/Minutes",
+		"/D/www/startup-map/node/node_modules/mysql/lib/client.js",
+		"/D/Dropbox/Ethernet Port Info",
+		"/D/www/startup-map/node/node_modules/mysql/lib/mysql.js",
+		"/D/www/startup-map/static/css/main.css",
+		"/D/www/startup-map/node/models/Locations.js",
+		"/D/www/startup-map/node/models/Startups.js",
+		"/D/www/startup-map/node/models/Startup.js",
+		"/D/www/startup-map/node/database.sql",
+		"/D/www/startup-map/node/models/Location.js",
+		"/D/www/startup-map/node/models/startup.js",
+		"/D/www/startup-map/.gitignore",
+		"/D/Projects/codersspace-javascript/server/server.js",
+		"/D/www/startup-map/database.sql",
+		"/D/www/startup-map/INSTALL.md",
+		"/D/www/startup-map/static/js/maps.js",
+		"/D/www/startup-map/static/js/jquery.js",
+		"/D/www/startup-map/README.md",
+		"/D/Dropbox/Academia/Carleton University/Year 1/Semester 1/COMP 1405/Assignments/Submissions/Assignment 5/Assignment 5/FingerprintIDSystem/FingerprintIDSystem.pde",
+		"/D/www/startup-map/conf.js",
+		"/D/www/startup-map/app.js",
+		"/D/Nexon/MapleStory/MapleStory.US.aes",
+		"/D/www/CodeReviewClientMaster/view.html",
+		"/C/Users/Bheesham/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/D/Downloads/php-5.4.4/main/main.c",
+		"/D/www/CodeReviewClientMaster/view.js",
+		"/D/www/CodeReviewClientMaster/view.css",
+		"/D/www/CodeReviewClientMaster/README",
+		"/D/www/CodeReviewClientMaster/LICENSE",
+		"/D/www/CodeReviewClientMaster/COPYRIGHT",
+		"/D/www/CodeReviewClientMaster/do/code",
+		"/D/www/CodeReviewClientMaster/do/comments",
+		"/D/www/synjs/.git/config",
+		"/C/Users/Bheesham/AppData/Local/Temp/fz3temp-1/issues.php",
+		"/C/Users/Bheesham/AppData/Local/GitHub/PortableGit_70baf56a054209e5afe24abd9304204b637c5807/bin/vim",
+		"/D/www/CodeReviewClientMaster/index.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"D:\\www\\custombid\\app",
+			"D:\\www\\bbauction",
+			"D:\\www\\startup-map\\node",
+			"D:\\www\\CodeReviewClientMaster",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$lang",
+			"$_COOKIE",
+			"cookie",
+			"session",
+			"Varia",
+			"__post",
+			"_POST",
+			".php",
+			"include ",
+			"include",
+			"server",
+			"file_put_contents",
+			"makeLogPath",
+			"cannot",
+			"logs",
+			"abort(404",
+			"abort",
+			"404",
+			"$beans",
+			"logs",
+			"whatever",
+			"whaever",
+			"whatever",
+			">get",
+			"board_config",
+			"timezone",
+			"date_default_timezone_set",
+			"<tr>\n     <td valign=\"middle\" nowrap=\"nowrap\" align=\"right\"><span class=\"gen\">{L_AIM}:</span></td>\n     <td class=\"row1\" valign=\"middle\"><span class=\"gen\">{AIM_IMG}</span></td>\n</tr>",
+			"language",
+			"$lang",
+			"$lang =",
+			"$lang ",
+			"$lang",
+			"lang",
+			"language",
+			"case PAGE_FAQ:",
+			"include($phpbb_root_path . 'includes/page_header.'.$phpEx);",
+			"TYPE=MyISAM",
+			"j++",
+			"$j",
+			"minecraft.jar",
+			"mc_version",
+			"([^\\\\]+)\\\\([^\\n]+)",
+			"issue-public",
+			"pdf",
+			"projec",
+			"French",
+			"ResX",
+			"High",
+			"ResX",
+			"article-pages-begin-orig",
+			"file",
+			"issue-pdf",
+			"issue-year",
+			"issue-cover-desc",
+			"fr",
+			"en",
+			"issue_volume",
+			"issue_cover_desc",
+			"issue_theme",
+			"issue_year",
+			"issue_number",
+			"issue_volume",
+			"f11",
+			"side_bar",
+			"files",
+			"file",
+			"f10",
+			"f9",
+			"map",
+			"toggle_",
+			"});\n",
+			"connect",
+			"Startups",
+			"Startup",
+			"startup",
+			"Startup",
+			"Locations",
+			"Location",
+			"models",
+			"name",
+			"/\"",
+			"email",
+			"top",
+			"createCookie",
+			"resolveRequirements",
+			"include",
+			"handleAjaxError",
+			"reportError",
+			"logError",
+			"getLanguageData",
+			"getLanguage",
+			"getComments",
+			"getCode",
+			"readCookie",
+			"createCookie",
+			"resolveRequirements",
+			"include",
+			"handleAjaxError",
+			"reportError",
+			"logError",
+			"function ",
+			"noSelect",
+			"language_data",
+			"comments",
+			"num_lines",
+			"selection_ob",
+			"comment_box_ob",
+			"comment_ob",
+			"selection_end",
+			"selection_start",
+			"highlight_end",
+			"highlight_start",
+			"comments_div",
+			"CodeReview.codeMirror",
+			"codeMirror =",
+			"``",
+			"codeMirror",
+			"CodeMirror",
+			"codeMirror",
+			"CodeMirror",
+			"codeMirror",
+			"CodeMirror",
+			"codeMirror",
+			"CodeReview",
+			"logError",
+			"modulo",
+			".commentButton"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"$2\\n",
+			"$2",
+			"CodeReview.resolveRequirements",
+			"CodeReview.include",
+			"CodeReview.error",
+			"CodeReview.log",
+			"CodeReview.getLanguageData",
+			"CodeReview.getLanguage",
+			"CodeReview.getComments",
+			"CodeReview.getCode",
+			"CodeReview.readCookie",
+			"CodeReview.createCookie",
+			"CodeReview.resolveRequirements",
+			"CodeReview.include",
+			"CodeReview.handleAjaxError",
+			"CodeReview.",
+			"#code",
+			"children(",
+			"_____XXXX_____",
+			"lst",
+			"list",
+			"lst"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 146.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"common",
+				"common.php"
+			],
+			[
+				"auction_rating",
+				"auction_rating.php"
+			],
+			[
+				".cfg",
+				"templates/subSilver/subSilver.cfg"
+			],
+			[
+				"profile_view_",
+				"templates/subSilver/profile_view_body.tpl"
+			],
+			[
+				"viewtopic_body",
+				"templates/subSilver/viewtopic_body.tpl"
+			],
+			[
+				"viewto",
+				"viewtopic.php"
+			],
+			[
+				"usercp_view",
+				"includes/usercp_viewprofile.php"
+			],
+			[
+				"viewtopic",
+				"viewtopic.php"
+			],
+			[
+				"page_heade",
+				"includes/page_header.php"
+			],
+			[
+				"subsilveroverall",
+				"templates/subSilver/overall_header.tpl"
+			],
+			[
+				"language/lang_engmain",
+				"language/lang_english/lang_main.php"
+			],
+			[
+				"templates/subsilver/subsilver.cfg",
+				"templates/subSilver/subSilver.cfg"
+			],
+			[
+				"language/lang_english/lang",
+				"language/lang_english/lang_admin.php"
+			],
+			[
+				"admin/index",
+				"admin/index.php"
+			],
+			[
+				"install",
+				"install_db.php"
+			],
+			[
+				"viewonline",
+				"viewonline.php"
+			],
+			[
+				"install_db",
+				"install_db.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true
+}
