@@ -8,6 +8,20 @@
 
 ###
 
+# Well, first thing's first. Be sure to keep a list of all events for future
+# reference.
+
+
+
+
+
+
+
+
+# Initialize impress
+this.impress().init()
+
+# Now do our stuff
 controls = document.getElementById("controls-container")
 slideshow = document.getElementById("impress")
 
@@ -26,14 +40,25 @@ show_menu = ->
 		controls_visible = false
 	return
 
+show_properties = ->
+	return
+
+bind_show_properties = ->
+	return
+
+insert_slide = ->
+	return
+
+delete_slide = ->
+	return
+
+insert_elm = ->
+	return
+
+delete_elm = ->
+	return
+
 document.addEventListener("keyup", (event) ->
 	switch event.keyCode
-		when 27
-			show_menu()
-		when 73
-			# Insert
-		when 68
-			# Delete
+		when 27 then show_menu()
 )
-
-this.impress().init()

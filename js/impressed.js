@@ -10,7 +10,9 @@
 
 
 (function() {
-  var controls, controls_visible, current_selected, properties_visible, show_menu, slideshow;
+  var bind_show_properties, controls, controls_visible, current_selected, delete_elm, delete_slide, insert_elm, insert_slide, properties_visible, show_menu, show_properties, slideshow;
+
+  this.impress().init();
 
   controls = document.getElementById("controls-container");
 
@@ -32,13 +34,23 @@
     }
   };
 
+  show_properties = function() {};
+
+  bind_show_properties = function() {};
+
+  insert_slide = function() {};
+
+  delete_slide = function() {};
+
+  insert_elm = function() {};
+
+  delete_elm = function() {};
+
   document.addEventListener("keyup", function(event) {
     switch (event.keyCode) {
       case 27:
         return show_menu();
     }
   });
-
-  this.impress().init();
 
 }).call(this);
