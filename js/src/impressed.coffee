@@ -8,36 +8,26 @@
 
 ###
 
-# Well, first thing's first. Be sure to keep a list of all events for future
-# reference.
-
-
-
-
-
-
-
-
-# Initialize impress
-this.impress().init()
-
 # Now do our stuff
 controls = document.getElementById("controls-container")
 slideshow = document.getElementById("impress")
 
-controls_visible = false
-properties_visible = false
+# Be sure to make these avaialbe to the document, we need to edit impress.js
+# to stop certain events, and these will help us
+document.controls_visible = false
+document.properties_visible = false
 
+# The currently selected **element**
 current_selected = undefined
 
 # Show or hide all of the different controls
 show_menu = -> 
-	if controls_visible == false
+	if document.controls_visible == false
 		controls.style.display = "block"
-		controls_visible = true
+		document.controls_visible = true
 	else
 		controls.style.display = "none"
-		controls_visible = false
+		document.controls_visible = false
 	return
 
 show_properties = ->
@@ -62,3 +52,5 @@ document.addEventListener("keyup", (event) ->
 	switch event.keyCode
 		when 27 then show_menu()
 )
+
+this.impress().init()
