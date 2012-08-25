@@ -1,16 +1,37 @@
 <!doctype html>
 <html>
 	<head>
-		<title>impressed</title>
+		<title>Impressed</title>
+		<meta name="viewport" content="width=1024">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="description" content="A hopefully easy to use UI for Impress.js">
+    <meta name="author" content="Bheesham Persaud">
 		<link rel="stylesheet" href="css/impressed.css">
 	</head>
 	<body>
-		<div id="controls-outer-container">
-			<div id="controls-inner-container">
-				<p>Controls come here</p>
-			</div>
-			<button type="button" id="control-show-hide">Show controls</button>
+		
+		<div id="controls-container">
+			<p>Controls come here</p>
 		</div>
+
+		<div id="impress">
+			<div id="slide-1" class="step slide" data-x="-1000" data-y="-1500">
+				<h1>Title</h1>
+				<small>Smallest text</small>
+				Text comes here
+    	</div>
+    	<div id="slide-2" class="step slide" data-x="0" data-y="-1500">
+				Bleh
+    	</div>
+		</div>
+
+		<div id="templates">
+			<div class="step slide" data-x="-1000" data-y="-1500">
+				<q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+    	</div>
+		</div>
+
+		<script type="text/javascript" src="impress.js/js/impress.js"></script>
 		<script type="text/javascript" src="js/impressed.js"></script>
 	</body>
 </html>

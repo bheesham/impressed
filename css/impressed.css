@@ -8,47 +8,86 @@
  *
  */
 
-#controls-outer-container  > p, #controls-outer-container  > div {
-	margin: 0px;
-	padding: 0px;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-#controls-outer-container {
-	font-family: "Arial";
-
-	width: 350px;
-	height: 50px;
-	margin-left: auto;
-	margin-right: auto;
-
-	position: static;
-
-	text-align: center;
-}
-
-#controls-inner-container {
+#controls-container {
 	display: none;
 
-	width: 100%;
-	height: 100%;
+	background-color: #FFFFFF;
+	font-family: "Arial";
+	text-align: center;
 
-	border: 1px solid #555555;
+	border: 3px solid #CCCCCC;
+  border-radius: 3px;
+
+	width: 350px;
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 20px;
+
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	clear: both;
 }
 
-#control-show-hide {
-	font-size: .6em;
 
-	background-color: #555;
-	border: 3px solid #555;
-	
-	color: #FFFFFF;
-	border-radius: 3px;
-	
-	margin-top: 5px;
-	padding: 3px;
+#templates {
+	display: none;
 }
 
-#control-show-hide:hover {
-	background-color: #666;
-	border-color: #666;
+.slide {
+	display: block;
+  
+	background-color: #FFFFFF;
+	font-size: 2em;
+
+	border: 3px solid #CCCCCC;
+  border-radius: 3px;
+
+  width: 800px;
+  height: 640px;
+  padding: 20px 30px;
+
+  z-index: 1;
+}
+
+.no-border {
+	border: none;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+small {
+	font-size: 0.5em;
 }

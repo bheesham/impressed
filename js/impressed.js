@@ -4,30 +4,41 @@
 	A hopefully easy to use UI for Impress.js
 	
 	@author 		Bheesham Persaud <bheesham.persaud@live.ca>
-	@copyright 	Copyright (C) 2012 Bheesham Persaud.
+	@copyright 	Copyright (C) 2012 Bheesham Persaud <http://bheesham.com/>.
 	@license 		Beerware <http://wikipedia.org/wiki/Beerware>
 */
 
 
 (function() {
-  var btn_show_hide, container, visible;
+  var controls, controls_visible, current_selected, properties_visible, show_menu, slideshow;
 
-  visible = false;
+  controls = document.getElementById("controls-container");
 
-  container = document.getElementById("controls-inner-container");
+  slideshow = document.getElementById("impress");
 
-  btn_show_hide = document.getElementById("control-show-hide");
+  controls_visible = false;
 
-  btn_show_hide.onclick = function() {
-    if (visible === false) {
-      btn_show_hide.innerText = "Hide controls";
-      container.style.display = "block";
-      visible = true;
+  properties_visible = false;
+
+  current_selected = void 0;
+
+  show_menu = function() {
+    if (controls_visible === false) {
+      controls.style.display = "block";
+      controls_visible = true;
     } else {
-      btn_show_hide.innerText = "Show controls";
-      container.style.display = "none";
-      visible = false;
+      controls.style.display = "none";
+      controls_visible = false;
     }
   };
+
+  document.addEventListener("keyup", function(event) {
+    switch (event.keyCode) {
+      case 27:
+        return show_menu();
+    }
+  });
+
+  this.impress().init();
 
 }).call(this);

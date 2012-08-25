@@ -8,21 +8,32 @@
 
 ###
 
-visible = false
+controls = document.getElementById("controls-container")
+slideshow = document.getElementById("impress")
 
-container 		= document.getElementById("controls-inner-container")
-btn_show_hide = document.getElementById("control-show-hide")
+controls_visible = false
+properties_visible = false
+
+current_selected = undefined
 
 # Show or hide all of the different controls
-btn_show_hide.onclick = -> 
-	if visible == false
-		btn_show_hide.innerText = "Hide controls"
-		container.style.display = "block"
-		visible = true
+show_menu = -> 
+	if controls_visible == false
+		controls.style.display = "block"
+		controls_visible = true
 	else
-		btn_show_hide.innerText = "Show controls"
-		container.style.display = "none"
-		visible = false
+		controls.style.display = "none"
+		controls_visible = false
 	return
 
-# Other stuff will come here
+document.addEventListener("keyup", (event) ->
+	switch event.keyCode
+		when 27
+			show_menu()
+		when 73
+			# Insert
+		when 68
+			# Delete
+)
+
+this.impress().init()
