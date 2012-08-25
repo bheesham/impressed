@@ -30,6 +30,9 @@ show_menu = ->
 		document.controls_visible = false
 	return
 
+get_properties = (elm) ->
+	return
+
 show_properties = ->
 	return
 
