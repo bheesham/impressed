@@ -11,18 +11,64 @@
 	<body>
 		
 		<div id="controls-container">
-			<p>Controls come here</p>
+			<p>
+				<button type="button" id="insert-slide">Insert slide</button> 
+				<button type="button" id="add-slide">Add slide</button>
+				<button type="button" id="delete-slide">Delete slide</button>
+				<button type="button" id="add-element">Add element</button>
+				<button type="button" id="show-hotkeys">Show hotkeys</button>
+			</p>
 		</div>
 
+		<div id="properties-container">
+			<p>Properties come here</p>
+		</div>
+
+		<div id="hotkeys-container">
+			<table>
+				<thead>
+					<tr>
+						<th>Action</th>
+						<th>Key</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Insert slide</td>
+						<td>i</td>
+					</tr>
+					<tr>
+						<td>Add slide</td>
+						<td>a</td>
+					</tr>
+					<tr>
+						<td>Delete slide</td>
+						<td>d</td>
+					</tr>
+					<tr>
+						<td>Add element</td>
+						<td>e</td>
+					</tr>
+					<tr>
+						<td>Show hotkeys</td>
+						<td>h</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>		
+
 		<div id="impress">
+			
 			<div id="slide-1" class="step slide" data-x="-1000" data-y="-1500">
 				<h1>Title</h1>
 				<small>Smallest text</small>
 				Text comes here
     	</div>
+    	
     	<div id="slide-2" class="step slide" data-x="0" data-y="-1500" data-rotate="90">
 				Bleh
     	</div>
+
 		</div>
 
 		<div id="templates">

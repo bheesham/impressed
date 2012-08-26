@@ -32,15 +32,12 @@ time, mark, audio, video {
 #controls-container {
 	display: none;
 
-	background-color: #FFFFFF;
+	opacity: 0.9;
+
+	background-color: transparent;
 	font-family: "Arial";
 	text-align: center;
 
-	border: 3px solid #CCCCCC;
-  border-radius: 3px;
-
-	width: 350px;
-	height: 100px;
 	margin-top: 10px;
 	margin-left: 20px;
 
@@ -51,6 +48,85 @@ time, mark, audio, video {
 	clear: both;
 }
 
+#controls-container > p > button {
+	display: block;
+
+	background-color: #AAA;
+	
+	border: 1px solid #AAA;
+	border-radius: 3px;
+	
+	min-width: 100px;
+
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+#controls-container > p > button:hover {
+	background-color: #999999;
+	border-color: #999999;
+}
+
+#properties-container {
+	display: none;
+
+	background-color: #FFFFFF;
+	font-family: "Arial";
+	text-align: center;
+
+	border: 3px solid #CCCCCC;
+  border-radius: 3px;
+
+	width: 400px;
+	height: 300px;
+	margin-top: 10px;
+	margin-left: 20px;
+
+	position: fixed;
+	top: 50px;
+	right: 0px;
+	z-index: 10;
+	clear: both;
+}
+
+#hotkeys-container {
+	display: none;
+
+	background-color: #FFFFFF;
+	font-family: "Arial";
+	text-align: left;
+
+	border: 3px solid #CCCCCC;
+  border-radius: 3px;
+
+	width: 300px;
+	height: 300px;
+	margin-top: 10px;
+	
+	margin-left: auto;
+	margin-right: auto;
+
+	position: fixed;
+	top: 50px;
+	left: 50px;
+
+	z-index: 10;
+	clear: both;
+}
+
+#hotkeys-container > table > thead > tr > th {
+	font-weight: bold;
+	text-align: center;
+}
+
+#hotkeys-container > table > tbody > tr > td {
+	padding-top: 10px;
+}
+
+#hotkeys-container > table > thead > tr > th, #hotkeys-container > table > tbody > tr > td {
+	border-bottom: 1px solid #000000;
+	width: 150px;
+}
 
 #templates {
 	display: none;

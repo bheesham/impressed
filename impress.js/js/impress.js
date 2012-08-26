@@ -703,7 +703,7 @@
         //   consistency I should add [shift+tab] as opposite action...
         document.addEventListener("keyup", function ( event ) {
             // Small modification to get it not to change when we're typing.
-            if ( document.controls_visible == true || document.properties_visible == true ) {
+            if ( document.controls_visible == true || document.properties_visible == true || document.hotkeys_visible == true ) {
                 return false;
             }
             
