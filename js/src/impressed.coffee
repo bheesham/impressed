@@ -66,30 +66,53 @@ hide_hotkeys = ->
 	hotkeys.style.display = "none"
 
 get_properties = (elm) ->
+	position = elm.getBoundingClientRect();
+	return {
+		tagname: 	elm.tagName
+		class: 		elm.className
+		x: 				position.left
+		y: 				position.top
+		value: 		elm.innerText
+	}
+
+bind_show_properties = (elm) ->
+	properties = get_properties(elm)
+	console.dir(properties)
 	return
 
-bind_show_properties = ->
+insert_slide = (prev_slide) ->
 	return
 
-insert_slide = ->
+delete_slide = (slide) ->
 	return
 
-delete_slide = ->
+insert_elm = (on_slide) ->
 	return
 
-insert_elm = ->
+delete_elm = (elm) ->
 	return
 
-delete_elm = ->
+set_position = (x, y) ->
 	return
 
+bind_draggable = (elm) ->
+	return
+
+
+# Toggle the displays
 document.addEventListener("keyup", 
 	(event) ->
 		switch event.keyCode
 			when 27 then toggle_displays()
 )
 
+# Show the hotkeys
 document.getElementById("show-hotkeys").onclick = ->
 	show_hotkeys()
+
+# Show the properties
+for elm in document.getElementsByClassName("element")
+	elm.onclick = ->
+		bind_show_properties(elm)
 
 this.impress().init()

@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"show_",
+				"show_hotkeys"
+			],
+			[
+				"hotk",
+				"hotkeys_visible"
+			],
+			[
+				"proper",
+				"properties_visible"
+			],
+			[
+				"current",
+				"current_selected"
+			],
+			[
+				"getEle",
+				"getElementById"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"contro",
+				"controls_expand"
+			],
+			[
 				"Bea",
 				"BeautifulStoneSoup"
 			],
@@ -111,6 +139,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1970,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/impressed.css",
+			"settings":
+			{
+				"buffer_size": 2715,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/src/impressed.coffee",
+			"settings":
+			{
+				"buffer_size": 2015,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "impress.js/index.html",
+			"settings":
+			{
+				"buffer_size": 19268,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "impress.js/css/impress-demo.css",
+			"settings":
+			{
+				"buffer_size": 21384,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -136,8 +204,20 @@
 	},
 	"file_history":
 	[
-		"/D/www/impressed/bartaz-impress.js-9ccb39d/README.md",
+		"/D/www/impressed/impress.js/js/impress.js",
+		"/D/www/impressed/impress.js/.gitignore",
+		"/D/www/impressed/.gitignore",
+		"/D/www/impressed/js/.gitignore",
 		"/D/www/impressed/README.md",
+		"/D/www/impressed/.git/COMMIT_EDITMSG",
+		"/D/www/impressed/js/src/impressed.coffee",
+		"/D/www/impressed/js/.gitingore",
+		"/D/www/impressed/js/src/events.coffee",
+		"/D/www/impressed/js/impressed.js",
+		"/D/www/impressed/impress.js/index.html",
+		"/C/Users/Bheesham/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/D/www/impressed/js/src/build.bat",
+		"/D/www/impressed/bartaz-impress.js-9ccb39d/README.md",
 		"/D/www/gbid/flight/net/Request.php",
 		"/D/www/gbid/includes/classes/QueryBuilder/QueryBuilder.php",
 		"/D/www/gbid/includes/classes/Scoop/Scoop.php",
@@ -251,19 +331,7 @@
 		"/D/www/startup-map/app.js",
 		"/D/Nexon/MapleStory/MapleStory.US.aes",
 		"/D/www/CodeReviewClientMaster/view.html",
-		"/C/Users/Bheesham/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/D/Downloads/php-5.4.4/main/main.c",
-		"/D/www/CodeReviewClientMaster/view.js",
-		"/D/www/CodeReviewClientMaster/view.css",
-		"/D/www/CodeReviewClientMaster/README",
-		"/D/www/CodeReviewClientMaster/LICENSE",
-		"/D/www/CodeReviewClientMaster/COPYRIGHT",
-		"/D/www/CodeReviewClientMaster/do/code",
-		"/D/www/CodeReviewClientMaster/do/comments",
-		"/D/www/synjs/.git/config",
-		"/C/Users/Bheesham/AppData/Local/Temp/fz3temp-1/issues.php",
-		"/C/Users/Bheesham/AppData/Local/GitHub/PortableGit_70baf56a054209e5afe24abd9304204b637c5807/bin/vim",
-		"/D/www/CodeReviewClientMaster/index.js"
+		"/D/Downloads/php-5.4.4/main/main.c"
 	],
 	"find":
 	{
@@ -286,6 +354,41 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"td",
+			"properties",
+			"slide",
+			"proto",
+			"prototy",
+			"controls",
+			"init",
+			"disable",
+			"impress-disabled",
+			"disable",
+			"controls",
+			"controls_visible",
+			"impress",
+			"HTMLAnchorElement",
+			"report",
+			"rotate",
+			"container",
+			"top",
+			"index",
+			"visible",
+			"impress.",
+			"next",
+			"next()",
+			".next()",
+			"next",
+			"api",
+			"event.detail",
+			"32",
+			"jQuery",
+			"hotkey",
+			"#slide",
+			"top",
+			"index",
+			"z-index",
+			"open",
 			"$lang",
 			"$_COOKIE",
 			"cookie",
@@ -378,42 +481,7 @@
 			"logError",
 			"getLanguageData",
 			"getLanguage",
-			"getComments",
-			"getCode",
-			"readCookie",
-			"createCookie",
-			"resolveRequirements",
-			"include",
-			"handleAjaxError",
-			"reportError",
-			"logError",
-			"function ",
-			"noSelect",
-			"language_data",
-			"comments",
-			"num_lines",
-			"selection_ob",
-			"comment_box_ob",
-			"comment_ob",
-			"selection_end",
-			"selection_start",
-			"highlight_end",
-			"highlight_start",
-			"comments_div",
-			"CodeReview.codeMirror",
-			"codeMirror =",
-			"``",
-			"codeMirror",
-			"CodeMirror",
-			"codeMirror",
-			"CodeMirror",
-			"codeMirror",
-			"CodeMirror",
-			"codeMirror",
-			"CodeReview",
-			"logError",
-			"modulo",
-			".commentButton"
+			"getComments"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -454,8 +522,146 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								871,
+								871
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 195.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/impressed.css",
+					"settings":
+					{
+						"buffer_size": 2715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1897,
+								1897
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1395.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/src/impressed.coffee",
+					"settings":
+					{
+						"buffer_size": 2015,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								888,
+								888
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 375.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "impress.js/index.html",
+					"settings":
+					{
+						"buffer_size": 19268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9814,
+								9830
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 482.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "impress.js/css/impress-demo.css",
+					"settings":
+					{
+						"buffer_size": 21384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5399,
+								5399
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -584,7 +790,7 @@
 		"width": 0.0
 	},
 	"show_minimap": true,
-	"show_open_files": true,
+	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 210.0,
