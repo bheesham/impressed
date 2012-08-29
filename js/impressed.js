@@ -29,24 +29,13 @@
   current_selected = void 0;
 
   toggle_displays = function() {
-    if (document.controls_visible === true) {
-      hide_controls();
+    if (document.controls_visible === false && document.properties_visible === false && document.hotkeys_visible === false) {
+      return show_controls();
     } else {
-      show_controls();
-    }
-    if (document.properties_visible === true) {
       hide_properties();
-    }
-    if (document.hotkeys_visible === true) {
+      hide_controls();
       return hide_hotkeys();
     }
-  };
-
-  show_properties = function() {
-    hide_controls();
-    hide_hotkeys();
-    document.properties_visible = true;
-    return properties.style.display = "block";
   };
 
   show_controls = function() {
@@ -56,6 +45,17 @@
     return controls.style.display = "block";
   };
 
+  show_properties = function(elm) {
+    var current_properties;
+    hide_properties();
+    hide_controls();
+    hide_hotkeys();
+    current_selected = elm;
+    current_properties = get_properties(elm);
+    document.properties_visible = true;
+    return properties.style.display = "block";
+  };
+
   show_hotkeys = function() {
     hide_properties();
     hide_controls();
@@ -63,14 +63,15 @@
     return hotkeys.style.display = "block";
   };
 
-  hide_properties = function() {
-    document.properties_visible = false;
-    return properties.style.display = "none";
-  };
-
   hide_controls = function() {
     document.controls_visible = false;
     return controls.style.display = "none";
+  };
+
+  hide_properties = function() {
+    current_selected = void 0;
+    document.properties_visible = false;
+    return properties.style.display = "none";
   };
 
   hide_hotkeys = function() {
@@ -88,11 +89,6 @@
       y: position.top,
       value: elm.innerText
     };
-  };
-
-  show_properties = function(elm) {
-    properties = get_properties(elm);
-    return console.log(properties.tagname + ' ' + properties.value);
   };
 
   insert_slide = function(prev_slide) {};
@@ -122,8 +118,7 @@
   for (_i = 0, _len = _ref.length; _i < _len; _i++) {
     elm = _ref[_i];
     elm.onclick = function() {
-      show_properties(this);
-      return console.dir(this);
+      return show_properties(this);
     };
   }
 

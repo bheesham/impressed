@@ -26,20 +26,15 @@ current_selected = undefined
 
 # Controls for displaying views
 toggle_displays = ->
-	if document.controls_visible == true
-		hide_controls()
-	else 
+	if document.controls_visible == false and 
+	document.properties_visible == false and
+	document.hotkeys_visible == false
 		show_controls()
-	if document.properties_visible == true
+	else
 		hide_properties()
-	if document.hotkeys_visible == true
+		hide_controls()
 		hide_hotkeys()
 
-show_properties = ->
-	hide_controls()
-	hide_hotkeys()
-	document.properties_visible = true
-	properties.style.display = "block"
 
 show_controls = ->
 	hide_properties()
@@ -47,19 +42,31 @@ show_controls = ->
 	document.controls_visible = true
 	controls.style.display = "block"
 
+show_properties = (elm) ->
+	hide_properties()
+	hide_controls()
+	hide_hotkeys()
+
+	current_selected = elm
+	current_properties = get_properties(elm)
+
+	document.properties_visible = true
+	properties.style.display = "block"
+
 show_hotkeys = ->
 	hide_properties()
 	hide_controls()
 	document.hotkeys_visible = true
 	hotkeys.style.display = "block"
 
-hide_properties = ->
-	document.properties_visible = false
-	properties.style.display = "none"
-
 hide_controls = ->
 	document.controls_visible = false
 	controls.style.display = "none"
+
+hide_properties = ->
+	current_selected = undefined
+	document.properties_visible = false
+	properties.style.display = "none"
 
 hide_hotkeys = ->
 	document.hotkeys_visible = false
@@ -74,9 +81,6 @@ get_properties = (elm) ->
 		y: 				position.top
 		value: 		elm.innerText
 	}
-
-show_properties = (elm) ->
-	properties = get_properties(elm)
 
 insert_slide = (prev_slide) ->
 	return
