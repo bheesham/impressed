@@ -10,7 +10,7 @@
 
 
 (function() {
-  var bind_draggable, bind_show_properties, controls, current_selected, delete_elm, delete_slide, elm, get_properties, hide_controls, hide_hotkeys, hide_properties, hotkeys, insert_elm, insert_slide, properties, set_position, show_controls, show_hotkeys, show_properties, slideshow, toggle_displays, _i, _len, _ref;
+  var bind_draggable, controls, current_selected, delete_elm, delete_slide, elm, get_properties, hide_controls, hide_hotkeys, hide_properties, hotkeys, insert_elm, insert_slide, properties, set_position, show_controls, show_hotkeys, show_properties, slideshow, toggle_displays, _i, _len, _ref;
 
   controls = document.getElementById("controls-container");
 
@@ -82,7 +82,7 @@
     var position;
     position = elm.getBoundingClientRect();
     return {
-      tagname: elm.tagName,
+      tagname: elm.tagName.toLowerCase(),
       "class": elm.className,
       x: position.left,
       y: position.top,
@@ -90,9 +90,9 @@
     };
   };
 
-  bind_show_properties = function(elm) {
+  show_properties = function(elm) {
     properties = get_properties(elm);
-    console.dir(properties);
+    return console.log(properties.tagname + ' ' + properties.value);
   };
 
   insert_slide = function(prev_slide) {};
@@ -122,7 +122,8 @@
   for (_i = 0, _len = _ref.length; _i < _len; _i++) {
     elm = _ref[_i];
     elm.onclick = function() {
-      return bind_show_properties(elm);
+      show_properties(this);
+      return console.dir(this);
     };
   }
 

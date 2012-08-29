@@ -180,10 +180,10 @@
 			}
 		},
 		{
-			"file": "README.md",
+			"file": ".gitignore",
 			"settings":
 			{
-				"buffer_size": 190,
+				"buffer_size": 37,
 				"line_ending": "Windows"
 			}
 		}
@@ -212,16 +212,16 @@
 	},
 	"file_history":
 	[
+		"/D/www/impressed/js/impressed.js",
+		"/D/www/impressed/README.md",
 		"/D/www/impressed/impress.js/js/impress.js",
 		"/D/www/impressed/impress.js/.gitignore",
 		"/D/www/impressed/.gitignore",
 		"/D/www/impressed/js/.gitignore",
-		"/D/www/impressed/README.md",
 		"/D/www/impressed/.git/COMMIT_EDITMSG",
 		"/D/www/impressed/js/src/impressed.coffee",
 		"/D/www/impressed/js/.gitingore",
 		"/D/www/impressed/js/src/events.coffee",
-		"/D/www/impressed/js/impressed.js",
 		"/D/www/impressed/impress.js/index.html",
 		"/C/Users/Bheesham/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/D/www/impressed/js/src/build.bat",
@@ -545,8 +545,8 @@
 						"selection":
 						[
 							[
-								1763,
-								1763
+								757,
+								777
 							]
 						],
 						"settings":
@@ -555,7 +555,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 555.0,
+						"translation.y": 120.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -599,8 +599,8 @@
 						"selection":
 						[
 							[
-								2517,
-								2517
+								1129,
+								1129
 							]
 						],
 						"settings":
@@ -609,7 +609,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1170.0,
+						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -672,23 +672,23 @@
 				},
 				{
 					"buffer": 5,
-					"file": "README.md",
+					"file": ".gitignore",
 					"settings":
 					{
-						"buffer_size": 190,
+						"buffer_size": 37,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								63,
-								63
+								37,
+								37
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

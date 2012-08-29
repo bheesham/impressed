@@ -68,17 +68,15 @@ hide_hotkeys = ->
 get_properties = (elm) ->
 	position = elm.getBoundingClientRect();
 	return {
-		tagname: 	elm.tagName
+		tagname: 	elm.tagName.toLowerCase()
 		class: 		elm.className
 		x: 				position.left
 		y: 				position.top
 		value: 		elm.innerText
 	}
 
-bind_show_properties = (elm) ->
+show_properties = (elm) ->
 	properties = get_properties(elm)
-	console.dir(properties)
-	return
 
 insert_slide = (prev_slide) ->
 	return
@@ -110,9 +108,9 @@ document.addEventListener("keyup",
 document.getElementById("show-hotkeys").onclick = ->
 	show_hotkeys()
 
-# Show the properties
+# Show the properties when you click on an element
 for elm in document.getElementsByClassName("element")
 	elm.onclick = ->
-		bind_show_properties(elm)
+		show_properties(this)
 
 this.impress().init()
