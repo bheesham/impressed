@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"properties",
+				"properties_visible"
+			],
+			[
+				"hotkeys",
+				"hotkeys_visible"
+			],
+			[
+				"controls",
+				"controls_visible"
+			],
+			[
 				"show_",
 				"show_hotkeys"
 			],
@@ -143,7 +155,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1930,
+				"buffer_size": 2019,
 				"line_ending": "Windows"
 			}
 		},
@@ -151,7 +163,7 @@
 			"file": "css/impressed.css",
 			"settings":
 			{
-				"buffer_size": 2718,
+				"buffer_size": 2667,
 				"line_ending": "Windows"
 			}
 		},
@@ -159,7 +171,7 @@
 			"file": "js/src/impressed.coffee",
 			"settings":
 			{
-				"buffer_size": 2517,
+				"buffer_size": 2593,
 				"line_ending": "Windows"
 			}
 		},
@@ -177,14 +189,6 @@
 			{
 				"buffer_size": 21384,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 37,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -212,11 +216,11 @@
 	},
 	"file_history":
 	[
+		"/D/www/impressed/impress.js/js/impress.js",
+		"/D/www/impressed/.gitignore",
 		"/D/www/impressed/js/impressed.js",
 		"/D/www/impressed/README.md",
-		"/D/www/impressed/impress.js/js/impress.js",
 		"/D/www/impressed/impress.js/.gitignore",
-		"/D/www/impressed/.gitignore",
 		"/D/www/impressed/js/.gitignore",
 		"/D/www/impressed/.git/COMMIT_EDITMSG",
 		"/D/www/impressed/js/src/impressed.coffee",
@@ -362,6 +366,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"visible",
+			"draggable=\"true\" ",
+			"get_properties",
 			"element",
 			"Element",
 			"element",
@@ -486,10 +493,7 @@
 			"name",
 			"/\"",
 			"email",
-			"top",
-			"createCookie",
-			"resolveRequirements",
-			"include"
+			"top"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -530,7 +534,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -538,15 +542,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1930,
+						"buffer_size": 2019,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								757,
-								777
+								1347,
+								1347
 							]
 						],
 						"settings":
@@ -555,7 +559,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 120.0,
+						"translation.y": 435.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -565,15 +569,15 @@
 					"file": "css/impressed.css",
 					"settings":
 					{
-						"buffer_size": 2718,
+						"buffer_size": 2667,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								51,
-								10
+								2288,
+								2288
 							]
 						],
 						"settings":
@@ -582,7 +586,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1230.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -592,15 +596,15 @@
 					"file": "js/src/impressed.coffee",
 					"settings":
 					{
-						"buffer_size": 2517,
+						"buffer_size": 2593,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1129,
-								1129
+								686,
+								686
 							]
 						],
 						"settings":
@@ -609,7 +613,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -626,8 +630,8 @@
 						"selection":
 						[
 							[
-								9814,
-								9830
+								1442,
+								1442
 							]
 						],
 						"settings":
@@ -637,7 +641,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 482.0,
+						"translation.y": 227.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -666,32 +670,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 3315.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": ".gitignore",
-					"settings":
-					{
-						"buffer_size": 37,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								37,
-								37
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
