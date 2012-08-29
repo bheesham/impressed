@@ -24,7 +24,7 @@
 
   document.properties_visible = false;
 
-  document.hotkeys = false;
+  document.hotkeys_visible = false;
 
   current_selected = void 0;
 

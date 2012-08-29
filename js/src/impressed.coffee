@@ -19,7 +19,7 @@ slideshow = document.getElementById("impress")
 # to stop certain events, and these will help us
 document.controls_visible = false
 document.properties_visible = false
-document.hotkeys = false
+document.hotkeys_visible = false
 
 # The currently selected **element**
 current_selected = undefined
