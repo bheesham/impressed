@@ -49,6 +49,7 @@ show_properties = (elm) ->
 
 	current_selected = elm
 	current_properties = get_properties(elm)
+	
 
 	document.properties_visible = true
 	properties.style.display = "block"

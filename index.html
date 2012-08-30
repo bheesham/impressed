@@ -2,9 +2,11 @@
 <html>
 	<head>
 		<title>Impressed</title>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 		<meta name="viewport" content="width=1024">
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="description" content="A hopefully easy to use UI for Impress.js">
+		<meta name="description"
+			content="A hopefully easy to use UI for Impress.js">
     <meta name="author" content="Bheesham Persaud">
 		<link rel="stylesheet" href="css/impressed.css">
 	</head>
@@ -21,7 +23,46 @@
 		</div>
 
 		<div id="properties-container">
-			Properties come here
+			<p id="property-value-container" class="property-container">
+				<label for="property-value">Value:</label>
+				<input type="text" id="property-value">
+			</p>
+			
+			<p id="property-style-container" class="property-container">
+				Style: 
+				<span id="style-header-1" class="text-button selected-text-button">
+					H <sub>1</sub>
+				</span>
+				
+				<span id="style-header-2" class="text-button">
+					H <sub>2</sub>
+				</span>
+				
+				<span id="style-header-3" class="text-button">
+					H <sub>3</sub>
+				</span>
+				
+				<span id="style-header-4" class="text-button">
+					H <sub>4</sub>
+				</span>
+				
+				<span id="style-text-italic" class="text-button">
+					<i>I</i>
+				</span>
+				
+				<span id="style-text-bold" class="text-button">
+					<strong>B</strong>
+				</span>
+				
+				<span id="style-text-small" class="text-button">
+					<small>Small</small>
+				</span>
+				
+				<span id="style-text-norm" class="text-button"
+				title="No styles. Just the default from the stylesheet and browser.">
+					Relatively normal
+				</span>
+			</p>
 		</div>
 
 		<div id="hotkeys-container">
@@ -49,7 +90,8 @@
 				<p draggable="true" class="element">Text comes here</p>
     	</div>
     	
-    	<div id="slide-2" class="step slide" data-x="0" data-y="-1500" data-rotate="90">
+    	<div id="slide-2" class="step slide" data-x="0" data-y="-1500" 
+    		data-rotate="90">
 				<p draggable="true" class="element">Bleh</p>
     	</div>
 

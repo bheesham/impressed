@@ -11,9 +11,7 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+del, dfn, em, img, ins, kbd, q, s, samp, tt, var, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -88,6 +86,27 @@ time, mark, audio, video {
 	right: 0px;
 	z-index: 10;
 	clear: both;
+}
+
+.property-container {
+	margin-bottom: 10px;
+}
+
+.text-button {
+	padding: 3px;
+	border: 1px solid #CCCCCC;
+	background-color: #CCCCCC;
+	border-radius: 3px;
+}
+
+.text-button:hover {
+	border: 1px solid #FAFAFA;
+	background-color: #FAFAFA;
+}
+
+.selected-text-button {
+	border: 1px solid #9F81F7;
+	background-color: #9F81F7;	
 }
 
 #hotkeys-container {

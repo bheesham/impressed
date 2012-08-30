@@ -155,7 +155,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2019,
+				"buffer_size": 2800,
 				"line_ending": "Windows"
 			}
 		},
@@ -163,7 +163,7 @@
 			"file": "css/impressed.css",
 			"settings":
 			{
-				"buffer_size": 2667,
+				"buffer_size": 2985,
 				"line_ending": "Windows"
 			}
 		},
@@ -171,7 +171,7 @@
 			"file": "js/src/impressed.coffee",
 			"settings":
 			{
-				"buffer_size": 2593,
+				"buffer_size": 2595,
 				"line_ending": "Windows"
 			}
 		},
@@ -216,6 +216,8 @@
 	},
 	"file_history":
 	[
+		"/D/www/bootstrapreference/index.html",
+		"/D/www/bootstrapreference/reference.html",
 		"/D/www/impressed/impress.js/js/impress.js",
 		"/D/www/impressed/.gitignore",
 		"/D/www/impressed/js/impressed.js",
@@ -341,9 +343,7 @@
 		"/D/Dropbox/Academia/Carleton University/Year 1/Semester 1/COMP 1405/Assignments/Submissions/Assignment 5/Assignment 5/FingerprintIDSystem/FingerprintIDSystem.pde",
 		"/D/www/startup-map/conf.js",
 		"/D/www/startup-map/app.js",
-		"/D/Nexon/MapleStory/MapleStory.US.aes",
-		"/D/www/CodeReviewClientMaster/view.html",
-		"/D/Downloads/php-5.4.4/main/main.c"
+		"/D/Nexon/MapleStory/MapleStory.US.aes"
 	],
 	"find":
 	{
@@ -366,6 +366,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<strong>H</strong>",
+			"#8000FF",
+			"CCFAFA",
+			"property-section",
+			"hotkeys-container",
+			"454545",
 			"visible",
 			"draggable=\"true\" ",
 			"get_properties",
@@ -487,13 +493,7 @@
 			"Startup",
 			"startup",
 			"Startup",
-			"Locations",
-			"Location",
-			"models",
-			"name",
-			"/\"",
-			"email",
-			"top"
+			"Locations"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -542,15 +542,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2019,
+						"buffer_size": 2800,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1347,
-								1347
+								1901,
+								1901
 							]
 						],
 						"settings":
@@ -559,7 +559,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 435.0,
+						"translation.y": 795.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -569,15 +569,15 @@
 					"file": "css/impressed.css",
 					"settings":
 					{
-						"buffer_size": 2667,
+						"buffer_size": 2985,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2288,
-								2288
+								443,
+								443
 							]
 						],
 						"settings":
@@ -586,7 +586,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1230.0,
+						"translation.y": 1215.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -596,15 +596,15 @@
 					"file": "js/src/impressed.coffee",
 					"settings":
 					{
-						"buffer_size": 2593,
+						"buffer_size": 2595,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								686,
-								686
+								542,
+								542
 							]
 						],
 						"settings":
@@ -613,7 +613,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 1485.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -658,8 +658,8 @@
 						"selection":
 						[
 							[
-								5399,
-								5399
+								6347,
+								6347
 							]
 						],
 						"settings":
@@ -669,7 +669,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3315.0,
+						"translation.y": 3480.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
