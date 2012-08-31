@@ -8,72 +8,61 @@
 
 ###
 
-
-controls = document.getElementById("controls-container")
-properties = document.getElementById("properties-container")
-hotkeys = document.getElementById("hotkeys-container")
-
-slideshow = document.getElementById("impress")
-
-# Be sure to make these avaialbe to the document, we need to edit impress.js
-# to stop certain events, and these will help us
-document.controls_visible = false
-document.properties_visible = false
-document.hotkeys_visible = false
-
-# The currently selected **element**
-current_selected = undefined
+Impressed = ->
+	this.controls = this.properties = this.hotkeys = this.slideshow = undefined
+	return
 
 # Controls for displaying views
-toggle_displays = ->
+Impressed.prototype.toggle_displays = ->
 	if document.controls_visible == false and 
 	document.properties_visible == false and
 	document.hotkeys_visible == false
-		show_controls()
+		this.show_controls()
 	else
-		hide_properties()
-		hide_controls()
-		hide_hotkeys()
+		this.hide_properties()
+		this.hide_controls()
+		this.hide_hotkeys()
 
 
-show_controls = ->
-	hide_properties()
-	hide_hotkeys()
+Impressed.prototype.show_controls = ->
+	this.hide_properties()
+	this.hide_hotkeys()
 	document.controls_visible = true
-	controls.style.display = "block"
+	this.controls.style.display = "block"
 
-show_properties = (elm) ->
-	hide_properties()
-	hide_controls()
-	hide_hotkeys()
+Impressed.prototype.show_properties = (elm) ->
+	this.hide_properties()
+	this.hide_controls()
+	this.hide_hotkeys()
 
-	current_selected = elm
-	current_properties = get_properties(elm)
+	this.current_selected = elm
+	this.current_properties = get_properties(elm)
 	
+	# Be sure to change the properties dialog as needed here
 
 	document.properties_visible = true
-	properties.style.display = "block"
+	this.properties.style.display = "block"
 
-show_hotkeys = ->
-	hide_properties()
-	hide_controls()
+Impressed.prototype.show_hotkeys = ->
+	this.hide_properties()
+	this.hide_controls()
 	document.hotkeys_visible = true
-	hotkeys.style.display = "block"
+	this.hotkeys.style.display = "block"
 
-hide_controls = ->
+Impressed.prototype.hide_controls = ->
 	document.controls_visible = false
-	controls.style.display = "none"
+	this.controls.style.display = "none"
 
-hide_properties = ->
-	current_selected = undefined
+Impressed.prototype.hide_properties = ->
+	this.current_selected = undefined
 	document.properties_visible = false
-	properties.style.display = "none"
+	this.properties.style.display = "none"
 
-hide_hotkeys = ->
+Impressed.prototype.hide_hotkeys = ->
 	document.hotkeys_visible = false
-	hotkeys.style.display = "none"
+	this.hotkeys.style.display = "none"
 
-get_properties = (elm) ->
+Impressed.prototype.get_properties = (elm) ->
 	position = elm.getBoundingClientRect();
 	return {
 		tagname: 	elm.tagName.toLowerCase()
@@ -83,40 +72,57 @@ get_properties = (elm) ->
 		value: 		elm.innerText
 	}
 
-insert_slide = (prev_slide) ->
+Impressed.prototype.insert_slide = (prev_slide) ->
 	return
 
-delete_slide = (slide) ->
+Impressed.prototype.delete_slide = (slide) ->
 	return
 
-insert_elm = (on_slide) ->
+Impressed.prototype.insert_elm = (on_slide) ->
 	return
 
-delete_elm = (elm) ->
+Impressed.prototype.delete_elm = (elm) ->
 	return
 
-set_position = (x, y) ->
+Impressed.prototype.set_position = (x, y) ->
 	return
 
-bind_draggable = (elm) ->
+Impressed.prototype.bind_draggable = (elm) ->
 	return
 
+
+impressed = new Impressed
+
+# Set the elements that we will need to manipulate
+impressed.controls 		= document.getElementById("controls-container")
+impressed.properties 	= document.getElementById("properties-container")
+impressed.hotkeys 		= document.getElementById("hotkeys-container")
+impressed.slideshow 	= document.getElementById("impress")
+
+# Be sure to make these avaialbe to the document, we need to edit impress.js
+# to stop certain events, and these will help us
+document.controls_visible = false
+document.properties_visible = false
+document.hotkeys_visible = false
+
+# The currently selected **element**
+impressed.current_selected = undefined
 
 # Toggle the displays
 document.addEventListener("keyup", 
 	(event) ->
 		switch event.keyCode
-			when 27 then toggle_displays()
+			when 27 then impressed.toggle_displays()
 )
 
 # Show the hotkeys
 document.getElementById("show-hotkeys").onclick = ->
-	show_hotkeys()
+	impressed.show_hotkeys()
 
 # Show the properties when you click on an element
 for elm in document.getElementsByClassName("element")
 	elm.onclick = ->
-		show_properties(this)
+		impressed.show_properties(this)
 
 this.impress().init()
-show_controls()
+impressed.show_controls()

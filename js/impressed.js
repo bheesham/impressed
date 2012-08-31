@@ -10,76 +10,63 @@
 
 
 (function() {
-  var bind_draggable, controls, current_selected, delete_elm, delete_slide, elm, get_properties, hide_controls, hide_hotkeys, hide_properties, hotkeys, insert_elm, insert_slide, properties, set_position, show_controls, show_hotkeys, show_properties, slideshow, toggle_displays, _i, _len, _ref;
+  var Impressed, elm, impressed, _i, _len, _ref;
 
-  controls = document.getElementById("controls-container");
+  Impressed = function() {
+    this.controls = this.properties = this.hotkeys = this.slideshow = void 0;
+  };
 
-  properties = document.getElementById("properties-container");
-
-  hotkeys = document.getElementById("hotkeys-container");
-
-  slideshow = document.getElementById("impress");
-
-  document.controls_visible = false;
-
-  document.properties_visible = false;
-
-  document.hotkeys_visible = false;
-
-  current_selected = void 0;
-
-  toggle_displays = function() {
+  Impressed.prototype.toggle_displays = function() {
     if (document.controls_visible === false && document.properties_visible === false && document.hotkeys_visible === false) {
-      return show_controls();
+      return this.show_controls();
     } else {
-      hide_properties();
-      hide_controls();
-      return hide_hotkeys();
+      this.hide_properties();
+      this.hide_controls();
+      return this.hide_hotkeys();
     }
   };
 
-  show_controls = function() {
-    hide_properties();
-    hide_hotkeys();
+  Impressed.prototype.show_controls = function() {
+    this.hide_properties();
+    this.hide_hotkeys();
     document.controls_visible = true;
-    return controls.style.display = "block";
+    return this.controls.style.display = "block";
   };
 
-  show_properties = function(elm) {
-    var current_properties;
-    hide_properties();
-    hide_controls();
-    hide_hotkeys();
-    current_selected = elm;
-    current_properties = get_properties(elm);
+  Impressed.prototype.show_properties = function(elm) {
+    this.hide_properties();
+    this.hide_controls();
+    this.hide_hotkeys();
+    this.current_selected = elm;
+    this.current_properties = get_properties(elm);
     document.properties_visible = true;
-    return properties.style.display = "block";
+    return this.properties.style.display = "block";
   };
 
-  show_hotkeys = function() {
-    hide_properties();
-    hide_controls();
+  Impressed.prototype.show_hotkeys = function() {
+    this.hide_properties();
+    this.hide_controls();
     document.hotkeys_visible = true;
-    return hotkeys.style.display = "block";
+    return this.hotkeys.style.display = "block";
   };
 
-  hide_controls = function() {
+  Impressed.prototype.hide_controls = function() {
     document.controls_visible = false;
-    return controls.style.display = "none";
+    return this.controls.style.display = "none";
   };
 
-  hide_properties = function() {
-    current_selected = void 0;
+  Impressed.prototype.hide_properties = function() {
+    this.current_selected = void 0;
     document.properties_visible = false;
-    return properties.style.display = "none";
+    return this.properties.style.display = "none";
   };
 
-  hide_hotkeys = function() {
+  Impressed.prototype.hide_hotkeys = function() {
     document.hotkeys_visible = false;
-    return hotkeys.style.display = "none";
+    return this.hotkeys.style.display = "none";
   };
 
-  get_properties = function(elm) {
+  Impressed.prototype.get_properties = function(elm) {
     var position;
     position = elm.getBoundingClientRect();
     return {
@@ -91,39 +78,57 @@
     };
   };
 
-  insert_slide = function(prev_slide) {};
+  Impressed.prototype.insert_slide = function(prev_slide) {};
 
-  delete_slide = function(slide) {};
+  Impressed.prototype.delete_slide = function(slide) {};
 
-  insert_elm = function(on_slide) {};
+  Impressed.prototype.insert_elm = function(on_slide) {};
 
-  delete_elm = function(elm) {};
+  Impressed.prototype.delete_elm = function(elm) {};
 
-  set_position = function(x, y) {};
+  Impressed.prototype.set_position = function(x, y) {};
 
-  bind_draggable = function(elm) {};
+  Impressed.prototype.bind_draggable = function(elm) {};
+
+  impressed = new Impressed;
+
+  impressed.controls = document.getElementById("controls-container");
+
+  impressed.properties = document.getElementById("properties-container");
+
+  impressed.hotkeys = document.getElementById("hotkeys-container");
+
+  impressed.slideshow = document.getElementById("impress");
+
+  document.controls_visible = false;
+
+  document.properties_visible = false;
+
+  document.hotkeys_visible = false;
+
+  impressed.current_selected = void 0;
 
   document.addEventListener("keyup", function(event) {
     switch (event.keyCode) {
       case 27:
-        return toggle_displays();
+        return impressed.toggle_displays();
     }
   });
 
   document.getElementById("show-hotkeys").onclick = function() {
-    return show_hotkeys();
+    return impressed.show_hotkeys();
   };
 
   _ref = document.getElementsByClassName("element");
   for (_i = 0, _len = _ref.length; _i < _len; _i++) {
     elm = _ref[_i];
     elm.onclick = function() {
-      return show_properties(this);
+      return impressed.show_properties(this);
     };
   }
 
   this.impress().init();
 
-  show_controls();
+  impressed.show_controls();
 
 }).call(this);
