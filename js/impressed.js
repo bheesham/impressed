@@ -124,4 +124,6 @@
 
   this.impress().init();
 
+  show_controls();
+
 }).call(this);

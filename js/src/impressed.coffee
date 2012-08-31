@@ -119,3 +119,4 @@ for elm in document.getElementsByClassName("element")
 		show_properties(this)
 
 this.impress().init()
+show_controls()

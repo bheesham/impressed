@@ -32,37 +32,43 @@ time, mark, audio, video {
 
 	opacity: 0.9;
 
-	background-color: transparent;
+	background-color: #AAAAAA;
 	font-family: "Arial";
-	text-align: center;
 
-	margin-top: 10px;
-	margin-left: 20px;
+	border: 1px solid #AAAAAA;
+	border-radius: 3px;
+
+	width: 800px;
+	height: 80px;
 
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	z-index: 10;
 	clear: both;
+
+	margin-top: 5px;
+	margin-left: 5px;
+	padding: 5px;
 }
 
 #controls-container > p > button {
-	display: block;
+	display: inline-block;
 
-	background-color: #AAA;
+	background-color: #CCCCCC;
 	
-	border: 1px solid #AAA;
+	border: 1px solid #CCCCCC;
 	border-radius: 3px;
 	
 	min-width: 100px;
+	height: 80px;
 
-	margin-bottom: 10px;
 	padding: 5px;
 }
 
 #controls-container > p > button:hover {
-	background-color: #999999;
-	border-color: #999999;
+	background-color: #FAFAFA;
+	border-color: #FAFAFA;
 }
 
 #properties-container {
@@ -97,6 +103,7 @@ time, mark, audio, video {
 	border: 1px solid #CCCCCC;
 	background-color: #CCCCCC;
 	border-radius: 3px;
+	margin-right: 3px;
 }
 
 .text-button:hover {

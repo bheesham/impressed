@@ -17,12 +17,23 @@
 				<button type="button" id="insert-slide">Insert slide</button> 
 				<button type="button" id="add-slide">Add slide</button>
 				<button type="button" id="delete-slide">Delete slide</button>
-				<button type="button" id="add-element">Add element</button>
+				<button type="button" id="add-content">Add content</button>
 				<button type="button" id="show-hotkeys">Show hotkeys</button>
 			</p>
 		</div>
 
 		<div id="properties-container">
+			<p id="property-content-type-container" class="property-container">
+				<label for="property-content-type">Content type:</label>
+				<select id="property-content-type">
+					<option value="">Select</option>
+					<option value="heading">Heading</option>
+					<option value="text">Text</option>
+					<option value="image">Image</option>
+					<option value="html">HTML</option>
+				</select>
+			</p>
+
 			<p id="property-value-container" class="property-container">
 				<label for="property-value">Value:</label>
 				<input type="text" id="property-value">
