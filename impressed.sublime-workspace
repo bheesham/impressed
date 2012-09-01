@@ -155,7 +155,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2800,
+				"buffer_size": 3201,
 				"line_ending": "Windows"
 			}
 		},
@@ -163,7 +163,7 @@
 			"file": "css/impressed.css",
 			"settings":
 			{
-				"buffer_size": 2985,
+				"buffer_size": 3080,
 				"line_ending": "Windows"
 			}
 		},
@@ -171,7 +171,7 @@
 			"file": "js/src/impressed.coffee",
 			"settings":
 			{
-				"buffer_size": 2595,
+				"buffer_size": 3322,
 				"line_ending": "Windows"
 			}
 		},
@@ -216,11 +216,11 @@
 	},
 	"file_history":
 	[
+		"/D/www/impressed/js/impressed.js",
 		"/D/www/bootstrapreference/index.html",
 		"/D/www/bootstrapreference/reference.html",
 		"/D/www/impressed/impress.js/js/impress.js",
 		"/D/www/impressed/.gitignore",
-		"/D/www/impressed/js/impressed.js",
 		"/D/www/impressed/README.md",
 		"/D/www/impressed/impress.js/.gitignore",
 		"/D/www/impressed/js/.gitignore",
@@ -366,6 +366,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"proto",
+			"toggle_displays",
+			"impressed",
+			"this",
+			"element",
+			"999999",
+			"AAA",
 			"<strong>H</strong>",
 			"#8000FF",
 			"CCFAFA",
@@ -486,14 +493,7 @@
 			"f10",
 			"f9",
 			"map",
-			"toggle_",
-			"});\n",
-			"connect",
-			"Startups",
-			"Startup",
-			"startup",
-			"Startup",
-			"Locations"
+			"toggle_"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -534,7 +534,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -542,15 +542,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2800,
+						"buffer_size": 3201,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1901,
-								1901
+								1229,
+								1229
 							]
 						],
 						"settings":
@@ -559,7 +559,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 795.0,
+						"translation.y": 285.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -569,15 +569,15 @@
 					"file": "css/impressed.css",
 					"settings":
 					{
-						"buffer_size": 2985,
+						"buffer_size": 3080,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								443,
-								443
+								1013,
+								1013
 							]
 						],
 						"settings":
@@ -586,7 +586,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1215.0,
+						"translation.y": 512.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -596,15 +596,15 @@
 					"file": "js/src/impressed.coffee",
 					"settings":
 					{
-						"buffer_size": 2595,
+						"buffer_size": 3322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								542,
-								542
+								1864,
+								1864
 							]
 						],
 						"settings":
@@ -613,7 +613,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1485.0,
+						"translation.y": 832.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -641,7 +641,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 227.0,
+						"translation.y": 17.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

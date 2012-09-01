@@ -36,8 +36,8 @@ Impressed.prototype.show_properties = (elm) ->
 	this.hide_hotkeys()
 
 	this.current_selected = elm
-	this.current_properties = get_properties(elm)
-	
+	this.current_properties = this.get_properties(elm)
+
 	# Be sure to change the properties dialog as needed here
 
 	document.properties_visible = true
@@ -64,13 +64,43 @@ Impressed.prototype.hide_hotkeys = ->
 
 Impressed.prototype.get_properties = (elm) ->
 	position = elm.getBoundingClientRect();
-	return {
-		tagname: 	elm.tagName.toLowerCase()
-		class: 		elm.className
-		x: 				position.left
-		y: 				position.top
-		value: 		elm.innerText
-	}
+	properties = {
+			class: 		elm.className
+			x: 				position.left
+			y: 				position.top
+			tagname: 	elm.firstChild.tagName.toLowerCase()
+		}
+
+
+	if elm.firstChild.tagName == "ul" or elm.firstChild.tagName == "ol" or
+	elm.firstChild.tagName == "div"
+		properties.value = elm.inerHTML
+	else
+		properties.value = elm.innerText
+		# Add the styles here
+		switch properties.tagname
+			when "h1" then properties.style = "style-header-1"
+			when "h2" then properties.style = "style-header-2"
+			when "h3" then properties.style = "style-header-3"
+			when "h4" then properties.style = "style-header-4"
+			when "strong" then properties.style = "style-bold"
+			when "i" then properties.style = "style-italic"
+			when "small" then properties.style = "style-small"
+			when "p" then properties.style = "style-norm" # Well, relatively normal.
+		
+	switch properties.tagname
+		when "h1", "h2", "h3", "h4"
+			properties.type = "header"
+		when "strong", "i", "small", "p"
+			properties.type = "text"
+		when "ul", "ol"
+			properties.type = "list"
+		when "div"
+			properties.type = "html"
+		when "img"
+			properties.type = "image"
+
+	return properties
 
 Impressed.prototype.insert_slide = (prev_slide) ->
 	return

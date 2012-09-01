@@ -38,7 +38,7 @@
     this.hide_controls();
     this.hide_hotkeys();
     this.current_selected = elm;
-    this.current_properties = get_properties(elm);
+    this.current_properties = this.get_properties(elm);
     document.properties_visible = true;
     return this.properties.style.display = "block";
   };
@@ -67,15 +67,68 @@
   };
 
   Impressed.prototype.get_properties = function(elm) {
-    var position;
+    var position, properties;
     position = elm.getBoundingClientRect();
-    return {
-      tagname: elm.tagName.toLowerCase(),
+    properties = {
       "class": elm.className,
       x: position.left,
       y: position.top,
-      value: elm.innerText
+      tagname: elm.firstChild.tagName.toLowerCase()
     };
+    if (elm.firstChild.tagName === "ul" || elm.firstChild.tagName === "ol" || elm.firstChild.tagName === "div") {
+      properties.value = elm.inerHTML;
+    } else {
+      properties.value = elm.innerText;
+      switch (properties.tagname) {
+        case "h1":
+          properties.style = "style-header-1";
+          break;
+        case "h2":
+          properties.style = "style-header-2";
+          break;
+        case "h3":
+          properties.style = "style-header-3";
+          break;
+        case "h4":
+          properties.style = "style-header-4";
+          break;
+        case "strong":
+          properties.style = "style-bold";
+          break;
+        case "i":
+          properties.style = "style-italic";
+          break;
+        case "small":
+          properties.style = "style-small";
+          break;
+        case "p":
+          properties.style = "style-norm";
+      }
+    }
+    switch (properties.tagname) {
+      case "h1":
+      case "h2":
+      case "h3":
+      case "h4":
+        properties.type = "header";
+        break;
+      case "strong":
+      case "i":
+      case "small":
+      case "p":
+        properties.type = "text";
+        break;
+      case "ul":
+      case "ol":
+        properties.type = "list";
+        break;
+      case "div":
+        properties.type = "html";
+        break;
+      case "img":
+        properties.type = "image";
+    }
+    return properties;
   };
 
   Impressed.prototype.insert_slide = function(prev_slide) {};
