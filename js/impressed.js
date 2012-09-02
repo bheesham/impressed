@@ -39,6 +39,30 @@
     this.hide_hotkeys();
     this.current_selected = elm;
     this.current_properties = this.get_properties(elm);
+    document.getElementById("label-property-value-text").style.display = "none";
+    document.getElementById("property-value-text").style.display = "none";
+    document.getElementById("label-property-value-image").style.display = "none";
+    document.getElementById("property-value-image").style.display = "none";
+    document.getElementById("label-property-value-html").style.display = "none";
+    document.getElementById("property-value-html").style.display = "none";
+    document.getElementById("property-style-container").style.display = "none";
+    document.getElementById("property-content-type").value = this.current_properties.type;
+    switch (this.current_properties.type) {
+      case "text":
+        document.getElementById("property-style-container").style.display = "block";
+        document.getElementById("label-property-value-text").style.display = "block";
+        document.getElementById("property-value-text").style.display = "block";
+        document.getElementById("property-value-text").value = this.current_properties.value;
+        break;
+      case "image":
+        document.getElementById("label-property-value-image").style.display = "block";
+        document.getElementById("property-value-image").style.display = "block";
+        document.getElementById("property-value-text").value = this.current_properties.value;
+        break;
+      case "html":
+        document.getElementById("label-property-value-html").style.display = "block";
+        document.getElementById("property-value-html").style.display = "block";
+    }
     document.properties_visible = true;
     return this.properties.style.display = "block";
   };
@@ -110,8 +134,6 @@
       case "h2":
       case "h3":
       case "h4":
-        properties.type = "header";
-        break;
       case "strong":
       case "i":
       case "small":

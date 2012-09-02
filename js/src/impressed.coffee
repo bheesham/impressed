@@ -39,6 +39,40 @@ Impressed.prototype.show_properties = (elm) ->
 	this.current_properties = this.get_properties(elm)
 
 	# Be sure to change the properties dialog as needed here
+	
+	# The different value types
+	document.getElementById("label-property-value-text").style.display 	= "none"
+	document.getElementById("property-value-text").style.display 				= "none"
+	document.getElementById("label-property-value-image").style.display = "none"
+	document.getElementById("property-value-image").style.display 			= "none"
+	document.getElementById("label-property-value-html").style.display 	= "none"
+	document.getElementById("property-value-html").style.display 				= "none"
+	
+	
+	
+	document.getElementById("property-style-container").style.display = "none"
+	
+	document.getElementById("property-content-type").value = this.current_properties.type
+
+	# Display the proper fields along with the values
+	switch this.current_properties.type
+		when "text"
+			document.getElementById("property-style-container").style.display = "block"
+			document.getElementById("label-property-value-text").style.display = "block"
+			document.getElementById("property-value-text").style.display = "block"
+			document.getElementById("property-value-text").value = this.current_properties.value
+
+			# Make the text input visible, disable the rest
+		when "image"
+			document.getElementById("label-property-value-image").style.display = "block"
+			document.getElementById("property-value-image").style.display = "block"
+			document.getElementById("property-value-text").value = this.current_properties.value
+
+			# Make the text input that checks for a URL visible
+		when "html"
+			document.getElementById("label-property-value-html").style.display = "block"
+			document.getElementById("property-value-html").style.display = "block"
+			# Make the textarea visible
 
 	document.properties_visible = true
 	this.properties.style.display = "block"
@@ -71,7 +105,6 @@ Impressed.prototype.get_properties = (elm) ->
 			tagname: 	elm.firstChild.tagName.toLowerCase()
 		}
 
-
 	if elm.firstChild.tagName == "ul" or elm.firstChild.tagName == "ol" or
 	elm.firstChild.tagName == "div"
 		properties.value = elm.inerHTML
@@ -89,9 +122,7 @@ Impressed.prototype.get_properties = (elm) ->
 			when "p" then properties.style = "style-norm" # Well, relatively normal.
 		
 	switch properties.tagname
-		when "h1", "h2", "h3", "h4"
-			properties.type = "header"
-		when "strong", "i", "small", "p"
+		when "h1", "h2", "h3", "h4", "strong", "i", "small", "p"
 			properties.type = "text"
 		when "ul", "ol"
 			properties.type = "list"

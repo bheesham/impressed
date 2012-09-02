@@ -27,16 +27,22 @@
 				<label for="property-content-type">Content type:</label>
 				<select id="property-content-type">
 					<option value="">Select</option>
-					<option value="heading">Heading</option>
 					<option value="text">Text</option>
+					<option value="list">List</option>
 					<option value="image">Image</option>
 					<option value="html">HTML</option>
 				</select>
 			</p>
 
 			<p id="property-value-container" class="property-container">
-				<label for="property-value">Value:</label>
-				<input type="text" id="property-value">
+				<label id="label-property-value-text" for="property-value-text">Value:</label>
+				<input type="text" id="property-value-text">
+				
+				<label id="label-property-value-image" for="property-value-image">Image source:</label>
+				<input type="text" id="property-value-image">
+
+				<label id="label-property-value-html" for="property-value-html">HTML:</label>
+				<textarea id="property-value-html"></textarea>
 			</p>
 			
 			<p id="property-style-container" class="property-container">
@@ -103,7 +109,7 @@
     	
     	<div id="slide-2" class="step slide" data-x="0" data-y="-1500" 
     		data-rotate="90">
-				<p draggable="true" class="element">Bleh</p>
+				<div class="element" draggable="true"><p>Bleh</p></div>
     	</div>
 
 		</div>

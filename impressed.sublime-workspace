@@ -171,7 +171,7 @@
 			"file": "js/src/impressed.coffee",
 			"settings":
 			{
-				"buffer_size": 3322,
+				"buffer_size": 4310,
 				"line_ending": "Windows"
 			}
 		},
@@ -366,6 +366,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"returns",
+			"class=\"element\"",
+			" draggable=\"true\"",
+			"get_proper",
 			"proto",
 			"toggle_displays",
 			"impressed",
@@ -489,11 +493,7 @@
 			"f11",
 			"side_bar",
 			"files",
-			"file",
-			"f10",
-			"f9",
-			"map",
-			"toggle_"
+			"file"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -549,8 +549,8 @@
 						"selection":
 						[
 							[
-								1229,
-								1229
+								1392,
+								1392
 							]
 						],
 						"settings":
@@ -559,7 +559,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 285.0,
+						"translation.y": 570.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -576,8 +576,8 @@
 						"selection":
 						[
 							[
-								1013,
-								1013
+								2973,
+								2973
 							]
 						],
 						"settings":
@@ -586,7 +586,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 512.0,
+						"translation.y": 2737.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -596,15 +596,15 @@
 					"file": "js/src/impressed.coffee",
 					"settings":
 					{
-						"buffer_size": 3322,
+						"buffer_size": 4310,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1864,
-								1864
+								992,
+								992
 							]
 						],
 						"settings":
@@ -613,7 +613,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 832.0,
+						"translation.y": 392.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
