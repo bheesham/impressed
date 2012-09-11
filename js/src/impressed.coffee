@@ -23,7 +23,6 @@ Impressed.prototype.toggle_displays = ->
 		this.hide_controls()
 		this.hide_hotkeys()
 
-
 Impressed.prototype.show_controls = ->
 	this.hide_properties()
 	this.hide_hotkeys()
@@ -48,9 +47,10 @@ Impressed.prototype.show_properties = (elm) ->
 	document.getElementById("label-property-value-html").style.display 	= "none"
 	document.getElementById("property-value-html").style.display 				= "none"
 	
-	
-	
 	document.getElementById("property-style-container").style.display = "none"
+	# Unselect whatever styles we had before
+	for style in document.getElementsByClassName("text-button")
+		this.remove_class(style, "selected-text-button")
 	
 	document.getElementById("property-content-type").value = this.current_properties.type
 
@@ -151,6 +151,13 @@ Impressed.prototype.set_position = (x, y) ->
 Impressed.prototype.bind_draggable = (elm) ->
 	return
 
+# See http://stackoverflow.com/a/2155766
+Impressed.prototype.remove_class = (elm, name) ->
+  elm_class = elm.className;
+  re = new RegExp('(^| )' + name + '( |$)');
+  elm_class = elm_class.replace(re, '$1');
+  elm_class = elm_class.replace('/ $/', '');
+  elm.className = elm_class;
 
 impressed = new Impressed
 

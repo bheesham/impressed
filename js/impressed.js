@@ -34,6 +34,7 @@
   };
 
   Impressed.prototype.show_properties = function(elm) {
+    var style, _i, _len, _ref;
     this.hide_properties();
     this.hide_controls();
     this.hide_hotkeys();
@@ -45,6 +46,11 @@
     document.getElementById("property-value-image").style.display = "none";
     document.getElementById("label-property-value-html").style.display = "none";
     document.getElementById("property-value-html").style.display = "none";
+    _ref = document.getElementsByClassName("text-button");
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      style = _ref[_i];
+      this.remove_class(style, "selected-text-button");
+    }
     document.getElementById("property-style-container").style.display = "none";
     document.getElementById("property-content-type").value = this.current_properties.type;
     switch (this.current_properties.type) {
@@ -164,6 +170,15 @@
   Impressed.prototype.set_position = function(x, y) {};
 
   Impressed.prototype.bind_draggable = function(elm) {};
+
+  Impressed.prototype.remove_class = function(elm, name) {
+    var elm_class, re;
+    elm_class = elm.className;
+    re = new RegExp('(^| )' + name + '( |$)');
+    elm_class = elm_class.replace(re, '$1');
+    elm_class = elm_class.replace('/ $/', '');
+    return elm.className = elm_class;
+  };
 
   impressed = new Impressed;
 

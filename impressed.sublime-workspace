@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"getEle",
+				"getElementsByClassName"
+			],
+			[
+				"pro",
+				"properties"
+			],
+			[
+				"current",
+				"current_properties"
+			],
+			[
 				"properties",
 				"properties_visible"
 			],
@@ -26,14 +38,6 @@
 			[
 				"proper",
 				"properties_visible"
-			],
-			[
-				"current",
-				"current_selected"
-			],
-			[
-				"getEle",
-				"getElementById"
 			],
 			[
 				"get",
@@ -155,7 +159,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3201,
+				"buffer_size": 3507,
 				"line_ending": "Windows"
 			}
 		},
@@ -171,7 +175,7 @@
 			"file": "js/src/impressed.coffee",
 			"settings":
 			{
-				"buffer_size": 4310,
+				"buffer_size": 6355,
 				"line_ending": "Windows"
 			}
 		},
@@ -217,6 +221,8 @@
 	"file_history":
 	[
 		"/D/www/impressed/js/impressed.js",
+		"/D/Projects/DCBots/src/URLBot.py",
+		"/D/www/impressed/index.html",
 		"/D/www/bootstrapreference/index.html",
 		"/D/www/bootstrapreference/reference.html",
 		"/D/www/impressed/impress.js/js/impress.js",
@@ -341,9 +347,7 @@
 		"/D/www/startup-map/static/js/jquery.js",
 		"/D/www/startup-map/README.md",
 		"/D/Dropbox/Academia/Carleton University/Year 1/Semester 1/COMP 1405/Assignments/Submissions/Assignment 5/Assignment 5/FingerprintIDSystem/FingerprintIDSystem.pde",
-		"/D/www/startup-map/conf.js",
-		"/D/www/startup-map/app.js",
-		"/D/Nexon/MapleStory/MapleStory.US.aes"
+		"/D/www/startup-map/conf.js"
 	],
 	"find":
 	{
@@ -366,6 +370,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"remClass",
+			"block",
+			"text",
+			"property-label",
+			"property-value-html",
 			"returns",
 			"class=\"element\"",
 			" draggable=\"true\"",
@@ -488,12 +497,7 @@
 			"issue_cover_desc",
 			"issue_theme",
 			"issue_year",
-			"issue_number",
-			"issue_volume",
-			"f11",
-			"side_bar",
-			"files",
-			"file"
+			"issue_number"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -542,15 +546,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 3201,
+						"buffer_size": 3507,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1392,
-								1392
+								1860,
+								1860
 							]
 						],
 						"settings":
@@ -559,7 +563,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 570.0,
+						"translation.y": 465.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -576,8 +580,8 @@
 						"selection":
 						[
 							[
-								2973,
-								2973
+								2029,
+								2009
 							]
 						],
 						"settings":
@@ -586,7 +590,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2737.0,
+						"translation.y": 1447.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -596,15 +600,15 @@
 					"file": "js/src/impressed.coffee",
 					"settings":
 					{
-						"buffer_size": 4310,
+						"buffer_size": 6355,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								992,
-								992
+								636,
+								636
 							]
 						],
 						"settings":
@@ -613,7 +617,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 392.0,
+						"translation.y": 1470.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -804,7 +808,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 210.0,
 	"status_bar_visible": true
 }
